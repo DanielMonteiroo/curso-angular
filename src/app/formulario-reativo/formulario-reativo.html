@@ -1,0 +1,13 @@
+<!--Formulário vinculado ao objeto-->
+<form [formGroup]="pessoa">
+
+  <label>NOME</label><br>
+  <input type="text" formControlName="nome"><br><br>
+
+  <label>IDADE</label><br>
+  <input type="number" formControlName="idade">
+
+</form>
+
+<h1>{{pessoa.value.nome}}</h1>
+<h1>{{pessoa.value.idade}}</h1>

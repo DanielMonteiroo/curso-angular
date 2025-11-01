@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { DiretivaStyle } from "./diretiva-style/diretiva-style";
+import { FormularioReativo } from "./formulario-reativo/formulario-reativo";
 
 @Component({
   selector: 'app-root',
-  imports: [DiretivaStyle],
+  imports: [FormularioReativo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
