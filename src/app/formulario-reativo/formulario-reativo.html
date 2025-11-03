@@ -11,3 +11,30 @@
 
 <h1>{{pessoa.value.nome}}</h1>
 <h1>{{pessoa.value.idade}}</h1>
+
+<hr>
+
+<!--VALIDAÇÂO NOME-->
+@if (pessoa.get('nome')?.errors?.['required']) {
+  <p>O campo nome deve ser preenchido!</p>
+}
+
+@if (pessoa.get('nome')?.errors?.['minlength']){
+  <p>O campo nome deve conter pelo menos 3 caracteres!</p>
+}
+@if (pessoa.get('nome')?.valid) {
+  <p>Nome válido</p>
+}
+
+<!--VALIDAÇÂO IDADE-->
+@if (pessoa.get('idade')?.errors?.['required']) {
+  <p>O campo idade deve ser preenchido!</p>
+}
+
+@if (pessoa.get('idade')?.errors?.['max']) {
+  <p>O campo idade deve ter o valor máximo de 100!</p>
+}
+
+@if (pessoa.get('idade')?.valid) {
+  <p>Idade válida!</p>
+}
