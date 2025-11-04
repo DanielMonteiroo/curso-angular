@@ -5,8 +5,9 @@
 
   <!--controle de fluxo para exibição dos botões-->
 @if (btnCadastrar) {
- <input type="button" [disabled]="pessoa.invalid" value="Cadastrar" class="btn btn-primary">
-}@else {
+ <input type="button" (click)="cadastrar()" [disabled]="pessoa.invalid" value="Cadastrar" class="btn btn-primary">
+}
+@else {
   <input type="button" value="Alterar" class="btn btn-success">
   <input type="button" value="Remover" class="btn btn-danger">
   <input type="button" value="Cancelar" class="btn btn-secondary">
@@ -24,6 +25,15 @@
   </tr>
 </thead>
 
-<tbody></tbody>
+<tbody>
+  @for (v of vetor; track $index) {
+    <tr>
+      <td>{{v.nome}}</td>
+      <td>{{v.idade}}</td>
+      <td>{{v.cidade}}</td>
+      <td><button class="btn btn-primary">Selecionar</button></td>
+    </tr>
+  }
+</tbody>
 
 </table>
