@@ -23,10 +23,23 @@ export class ProjetoCrud {
   //Vetor para armazenamento de pessoas cadastradas
   vetor: Pessoa[] = [];
 
+  //indice da pessoa selecionada
+  indicePessoa:number = -1;
+
   //Método para cadastrar
   cadastrar():void {
     this.vetor.push(this.pessoa.value as Pessoa); //as Pessoa faz referencia a classe criada na pasta Modelo
     this.pessoa.reset(); //limpar o formulario apos o cadastro
+  }
+
+  //Método para selecionar uma pessoa especifica
+  selecionar(indice:number):void{
+   this.indicePessoa = indice;
+   this.pessoa.get('nome')?.setValue(this.vetor[indice].nome|| ''); //atributo associado ao indice indicado
+   this.pessoa.get('idade')?.setValue(this.vetor[indice].idade?.toString() ||'');
+   this.pessoa.get('cidade')?.setValue(this.vetor[indice].cidade|| '');
+
+   this.btnCadastrar = false;
   }
 
 }
