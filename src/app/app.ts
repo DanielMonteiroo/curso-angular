@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { FormularioReativo } from "./formulario-reativo/formulario-reativo";
+import { ProjetoCrud } from "./projeto-crud/projeto-crud";
 
 @Component({
   selector: 'app-root',
-  imports: [FormularioReativo],
+  imports: [ProjetoCrud],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

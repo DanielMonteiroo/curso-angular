@@ -1,0 +1,16 @@
+/*centralizar formulário*/
+form{
+width: 50%;
+margin: 30px auto;
+text-align: center;
+}
+
+/*espaçamento entre as inputs*/
+input{
+  margin-bottom: 12px;
+}
+
+/*espaçamento entre os botões*/
+input[type='button']{
+  margin-left: 12px;
+}
