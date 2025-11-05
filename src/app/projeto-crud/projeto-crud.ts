@@ -42,4 +42,11 @@ export class ProjetoCrud {
    this.btnCadastrar = false;
   }
 
+  //Método para cancelar ações de alterar e remvover
+  cancelar():void{
+    this.pessoa.reset();
+    this.indicePessoa = -1;
+    this.btnCadastrar = true;
+  }
+
 }
