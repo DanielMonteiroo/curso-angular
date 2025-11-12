@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { ProjetoCrud } from "./projeto-crud/projeto-crud";
-import { Pipes } from "./pipes/pipes";
+import { Rotas } from "./rotas/rotas";
 
 @Component({
   selector: 'app-root',
-  imports: [Pipes],
+  imports: [Rotas],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

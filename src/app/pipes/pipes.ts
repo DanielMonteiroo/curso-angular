@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SituacaoMediaPipe } from '../situacao-media-pipe';
 
 @Component({
   selector: 'app-pipes',
-  imports: [CommonModule],
+  imports: [CommonModule,SituacaoMediaPipe],
   templateUrl: './pipes.html',
   styleUrl: './pipes.css',
 })
