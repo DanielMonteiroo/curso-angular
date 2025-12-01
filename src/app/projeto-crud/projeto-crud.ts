@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Pessoa } from '../Modelo/Pessoa';
+import { Pessoa } from '../modelo/Pessoa';
 
 @Component({
   selector: 'app-projeto-crud',

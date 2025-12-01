@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>userId</th>
+      <th>id</th>
+      <th>title</th>
+      <th>body</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for(postagem of postagens; track $index){
+      <tr>
+        <td>{{postagem.userId}}</td>
+        <td>{{postagem.id}}</td>
+        <td>{{postagem.title}}</td>
+        <td>{{postagem.body}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
