@@ -1,0 +1,20 @@
+form{
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+input[type="text"]{
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #0e08b8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input[type="button"]{
+  width: 20%;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(25, 98, 168);
+  color: aliceblue;
+}
