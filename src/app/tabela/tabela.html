@@ -8,6 +8,12 @@
   </thead>
 
   <tbody>
-    
+    @for (v of vetor; track $index) {
+      <tr>
+        <td>{{v.nome}}</td>
+        <td>{{v.cidade}}</td>
+        <td><button>Remover</button></td>
+      </tr>
+    }
   </tbody>
 </table>

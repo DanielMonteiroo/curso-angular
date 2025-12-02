@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Pessoa } from '../modelo/Pessoa';
 
 @Component({
   selector: 'app-tabela',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './tabela.css',
 })
 export class Tabela {
+  @Input() vetor:Pessoa[] =[];
 
 }
