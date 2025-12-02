@@ -1,2 +1,4 @@
-<app-formulario></app-formulario>
+<app-formulario (adicionar)="adicionarPessoa($event)"></app-formulario>
 <app-tabela></app-tabela>
+
+<p>{{pessoas | json}}</p>

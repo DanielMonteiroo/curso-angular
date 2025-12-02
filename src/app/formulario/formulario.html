@@ -1,8 +1,8 @@
 <form action="">
 
-  <input type="text" placeholder="Nome">
-   <input type="text" placeholder="Cidade">
-    <input type="button" value="Cadastrar">
+  <input type="text" name="nome" [(ngModel)]="nome" placeholder="Nome">
+   <input type="text" name="cidade" [(ngModel)]="cidade" placeholder="Cidade">
+    <input type="button" value="Cadastrar" (click)="cadastrar()">
 
 </form>
 

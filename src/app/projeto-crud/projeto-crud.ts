@@ -16,8 +16,7 @@ export class ProjetoCrud {
   //Objeto pessoa do tipo FormGroup
   pessoa = new FormGroup({
     nome: new FormControl('',[Validators.required,Validators.minLength(3)]),
-    idade: new FormControl('',[Validators.required,Validators.min(0),Validators.max(100)]),
-    cidade: new FormControl('',[Validators.required,Validators.minLength(3)])
+        cidade: new FormControl('',[Validators.required,Validators.minLength(3)])
   });
 
   //Vetor para armazenamento de pessoas cadastradas
@@ -36,7 +35,6 @@ export class ProjetoCrud {
   selecionar(indice:number):void{
    this.indicePessoa = indice;
    this.pessoa.get('nome')?.setValue(this.vetor[indice].nome|| ''); //atributo associado ao indice indicado
-   this.pessoa.get('idade')?.setValue(this.vetor[indice].idade?.toString() ||'');
    this.pessoa.get('cidade')?.setValue(this.vetor[indice].cidade|| '');
 
    this.btnCadastrar = false;
