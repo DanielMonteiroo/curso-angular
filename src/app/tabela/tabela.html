@@ -12,7 +12,7 @@
       <tr>
         <td>{{v.nome}}</td>
         <td>{{v.cidade}}</td>
-        <td><button>Remover</button></td>
+        <td><button (click)="excluir($index)">Remover</button></td>
       </tr>
     }
   </tbody>

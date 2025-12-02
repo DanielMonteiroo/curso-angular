@@ -19,4 +19,9 @@ adicionarPessoa(pessoa:Pessoa):void{
 this.pessoas.push(pessoa);
 }
 
+//método para remover pessoas
+removerPessoa(indice:number):void{
+  this.pessoas.splice(indice,1);
+}
+
 }
